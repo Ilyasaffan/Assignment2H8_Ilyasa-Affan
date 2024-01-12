@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment 2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous">
+</head>
+
+<body style="background-color: gainsboro;">
+    <!-- code buat navbar -->
+    <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#product">PRODUCT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">GALLERY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">BLOG</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#inventory">MY INVENTORY</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- header cv -->
+    <div class="header-cv bg-white text-dark mt-3 pt-3 pb-3" style="border-radius: 5px; margin-left: 10px; margin-right: 10px;">
+        <div class="container mb-4 header-cv bg-white text-dark mt-3 pt-3 pb-3" style="border-radius: 5px; margin-left: 10px; margin-right: 10px;">
+            <div class="row">
+                <div class="col-md-3 pt-5">
+                    <img class="rounded-circle img-fluid" src="megachan.JPEG" alt="Profile" width="130px">
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h1>Nama</h1>
+                    <h3>Posisi</h3>
+                    <div>
+                        <input type="submit" value="Edit">
+                        <input type="submit" value="Resume">
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td><b>Availability</b></td>
+                            <td id="availabilityValue">Full Time</td>
+                        </tr>
+                        <tr>
+                            <td><b>Usia</b></td>
+                            <td id="usiaValue">21</td>
+                        </tr>
+                        <tr>
+                            <td><b>Lokasi</b></td>
+                            <td id="lokasiValue">Jakarta, Indonesia</td>
+                        </tr>
+                        <tr>
+                            <td><b>Pengalaman</b></td>
+                            <td id="pengalamanValue">2</td>
+                        </tr>
+                        <tr>
+                            <td><b>Email</b></td>
+                            <td id="emailValue">Developer@gmail.com</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- submit data form -->
+    <div class="header-cv bg-white text-dark mt-3" style="border-radius: 5px; margin-left: 10px; margin-right: 10px;">
+        <div class="container">
+            <div class="row">
+                <form id="myForm" action="result.html" method="get" class="edit_forms mb-3 row">
+                    <div class="mb-3 row">
+                        <label for="fullname">Nama</label><br>
+                        <input type="text" id="fullname" name="fullname" placeholder="masukan nama anda">
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="role">Role</label><br>
+                        <input type="text" id="role" name="role">
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="availability">Availability</label><br>
+                        <input type="text" name="availability">
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="usia">Usia</label><br>
+                        <input type="text" name="usia" id="usia">
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="lokasi">Lokasi</label><br>
+                        <input type="text" name="lokasi" id="lokasi">
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="pengalaman">Years Experience</label><br>
+                        <input type="text" name="pengalaman" id="pengalaman">
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="email">Email</label><br>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div class="mb-3 row">
+                        <button id="button-click" type="button" class="btn btn-success w-100">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

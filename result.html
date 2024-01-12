@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous">
+</head>
+
+<body style="background-color: gainsboro;">
+
+    <!-- menggunakan desain navbar yang sama dari index.html -->
+    <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#product">PRODUCT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">GALLERY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">BLOG</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#inventory">MY INVENTORY</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="header-cv bg-white text-dark mt-3 pt-3 pb-3"
+        style="border-radius: 5px; margin-left: 10px; margin-right: 10px;">
+        <div class="container mb-4 header-cv bg-white text-dark mt-3 pt-3 pb-3"style="border-radius: 5px; margin-left: 10px; margin-right: 10px;">
+            <div class="row">
+                <div class="col-md-3 pt-5">
+                    <img class="rounded-circle img-fluid" src="megachan.JPEG" alt="Profile" width=130px;>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <!-- memanggil id tempat diinputnya nama dan role -->
+                    <h1 id="resultNama"></h1>
+                    <h3 id="resultRole"></h3>
+                    <div>
+                        <button onclick="window.location.href='index.html'" class="btn btn-primary">Return</button>
+                        <button onclick="window.location.href=''" class="btn btn-secondary">Resume</button>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td>Availability</td>
+                            <td id="resultAvailability"></td>
+                        </tr>
+                        <tr>
+                            <td>Usia</td>
+                            <td id="resultUsia"></td>
+                        </tr>
+                        <tr>
+                            <td>Lokasi</td>
+                            <td id="resultLokasi"></td>
+                        </tr>
+                        <tr>
+                            <td>Years Experience</td>
+                            <td id="resultPengalaman"></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td id="resultEmail"></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="result.js"></script>
+</body>
+
+</html>
